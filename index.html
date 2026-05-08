@@ -207,16 +207,10 @@ section { padding: 4.5rem 2rem; }
 .route-meta-item .value { font-size: 0.8rem; color: var(--black); font-weight: 500; }
 .route-callout { background: var(--yellow-soft); border: 1px solid #fde68a; border-radius: 6px; padding: 0.85rem 1rem; font-size: 0.8rem; color: var(--gray-800); line-height: 1.5; margin-top: auto; }
 .route-callout strong { color: #92400e; }
-.routes-recommend { margin-top: 2.5rem; background: var(--black); color: var(--white); border-radius: 12px; padding: 2.4rem 2.6rem; max-width: 920px; position: relative; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
-.routes-recommend::before { content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 5px; background: var(--accent); }
-.routes-recommend-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem; }
-.routes-recommend-title { font-family: var(--serif); font-size: clamp(1.6rem, 2.6vw, 2rem); font-weight: 300; line-height: 1.2; margin-bottom: 1.2rem; color: var(--white); }
-.routes-recommend-title em { font-style: italic; font-weight: 400; color: var(--accent); }
-.routes-recommend p { font-family: var(--serif); font-size: 1.05rem; line-height: 1.75; color: rgba(255,255,255,0.85); margin-bottom: 0.9rem; font-weight: 300; }
-.routes-recommend p:last-child { margin-bottom: 0; }
-.routes-recommend strong { color: var(--accent); font-weight: 500; }
-.routes-recommend-bottom { padding-top: 1rem; margin-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.15); font-style: italic; }
-@media (max-width: 600px) { .routes-recommend { padding: 1.8rem 1.5rem; } }
+.routes-recommend { margin-top: 1.6rem; background: var(--black); color: var(--white); border-radius: 8px; padding: 1rem 1.3rem; max-width: 720px; display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; border-left: 4px solid var(--accent); }
+.routes-recommend-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+.routes-recommend p { font-size: 0.88rem; line-height: 1.55; color: rgba(255,255,255,0.9); margin: 0; flex: 1; min-width: 240px; }
+.routes-recommend strong { color: var(--accent); font-weight: 600; }
 
 /* TWO PATHWAYS NEXT STEPS */
 .pathways-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; margin-top: 1.5rem; }
@@ -397,7 +391,7 @@ footer .we-relate em { font-style: italic; }
     <a href="#sector-expertise">Credentials</a>
     <a href="#architecture">Architecture</a>
     <a href="#routes">Two Routes</a>
-    <a href="#approach">Approach</a>
+    <a href="#approach">Option A</a>
     <a href="#why-boom">Why Us</a>
     <a href="#next-steps">Next Steps</a>
   </div>
@@ -626,36 +620,17 @@ footer .we-relate em { font-style: italic; }
     </div>
 
     <div class="routes-recommend">
-      <div class="routes-recommend-label">Our Recommendation</div>
-      <h3 class="routes-recommend-title">Start with <em>Option A</em>.</h3>
-      <p>It addresses the most acute pain right now &mdash; marketing self-service, multi-brand execution, lead handoff into Dynamics &mdash; and gives the team something tangible in weeks, not quarters.</p>
-      <p>It&rsquo;s the lower-risk path. Targeted, well-scoped, integration-led. No CRM disruption, no legacy untangling, no commitment to a wider transformation programme before you&rsquo;ve had real HubSpot experience under your belt.</p>
-      <p>And critically, <strong>none of the work is wasted.</strong> Everything we build in Option A &mdash; the data model, the Business Units, the Dynamics integration, the consent architecture, the campaign engine &mdash; is exactly what Phase 1 of Option B would look like anyway. So if you later decide a broader platform consolidation is the right move, you&rsquo;re already underway.</p>
-      <p class="routes-recommend-bottom">Use Option A as the foundation. Use the experience to validate &mdash; with real evidence, not assumption &mdash; whether the bigger Option B transformation is commercially and technically justified.</p>
-    </div>
-  </div>
-</section>
-
-<section class="milestones reveal" id="milestones">
-  <div class="section-inner">
-    <div class="section-label">Milestones</div>
-    <h2 class="section-title">Key Delivery <em>Checkpoints</em></h2>
-    <p class="section-sub">Indicative milestones &mdash; dates to be confirmed during scoping.</p>
-    <div class="milestone-track">
-      <div class="milestone-item"><div class="milestone-dot p1">1</div><h4>Portal &amp; Data Ready</h4><p>HubSpot configured, Business Units live, data migrated, D365 integration active</p></div>
-      <div class="milestone-item"><div class="milestone-dot p1">2</div><h4>First Campaign Sent</h4><p>MVP achieved &mdash; marketing team sends first email campaign from HubSpot</p></div>
-      <div class="milestone-item"><div class="milestone-dot p2">3</div><h4>Events Live</h4><p>Event registration, automated comms, and BBD Boom event module deployed</p></div>
-      <div class="milestone-item"><div class="milestone-dot p2">4</div><h4>Omnichannel Active</h4><p>Social, WhatsApp, ads, and advanced automation all operational</p></div>
-      <div class="milestone-item"><div class="milestone-dot done">5</div><h4>Full Value</h4><p>Attribution reporting, ROI dashboards, and team fully self-sufficient</p></div>
+      <span class="routes-recommend-label">Our Recommendation</span>
+      <p><strong>Option A.</strong> It solves the immediate marketing pain quickly, with no wasted work &mdash; everything we build is reusable in Option B if you later decide to go further.</p>
     </div>
   </div>
 </section>
 
 <section class="approach reveal" id="approach">
   <div class="section-inner">
-    <div class="section-label">The Approach</div>
-    <h2 class="section-title">Two Phases, Two Workstreams, <em>One Platform</em></h2>
-    <p class="section-sub">Phase 1 delivers an MVP &mdash; your team sending email marketing from HubSpot. Phase 2 rolls out the full marketing engine. Both workstreams run in parallel within each phase.</p>
+    <div class="section-label">Option A in Detail</div>
+    <h2 class="section-title">What does <em>Option A</em> look like?</h2>
+    <p class="section-sub">Two phases, two workstreams, one platform. Phase 1 delivers an MVP &mdash; your team sending email marketing from HubSpot. Phase 2 rolls out the full marketing engine. Both workstreams run in parallel within each phase.</p>
     <div class="phase-container" style="margin-top:2rem;">
       <div class="phase-block">
         <div class="phase-header"><span class="phase-badge p1">Phase 1</span><h3>MVP &mdash; Email Marketing Live</h3><span class="phase-milestone">Milestone: First campaign sent from HubSpot</span></div>
@@ -671,6 +646,21 @@ footer .we-relate em { font-style: italic; }
           <div class="ws-col marketing"><h4><span class="ws-dot"></span> Marketing Activation</h4><ul><li>Event management rollout + BBD Boom event module deployment</li><li>Social media publishing, inbox, and ads integration</li><li>WhatsApp channel activation</li><li>Campaign and attribution reporting dashboards</li><li>AB testing framework and smart content</li><li>AI brand voice setup per brand</li><li>Advanced automation (nurture sequences, event lifecycle, partner comms)</li></ul></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="milestones reveal" id="milestones">
+  <div class="section-inner">
+    <div class="section-label">Milestones</div>
+    <h2 class="section-title">Key Delivery <em>Checkpoints</em></h2>
+    <p class="section-sub">Indicative milestones for Option A &mdash; dates to be confirmed during scoping.</p>
+    <div class="milestone-track">
+      <div class="milestone-item"><div class="milestone-dot p1">1</div><h4>Portal &amp; Data Ready</h4><p>HubSpot configured, Business Units live, data migrated, D365 integration active</p></div>
+      <div class="milestone-item"><div class="milestone-dot p1">2</div><h4>First Campaign Sent</h4><p>MVP achieved &mdash; marketing team sends first email campaign from HubSpot</p></div>
+      <div class="milestone-item"><div class="milestone-dot p2">3</div><h4>Events Live</h4><p>Event registration, automated comms, and BBD Boom event module deployed</p></div>
+      <div class="milestone-item"><div class="milestone-dot p2">4</div><h4>Omnichannel Active</h4><p>Social, WhatsApp, ads, and advanced automation all operational</p></div>
+      <div class="milestone-item"><div class="milestone-dot done">5</div><h4>Full Value</h4><p>Attribution reporting, ROI dashboards, and team fully self-sufficient</p></div>
     </div>
   </div>
 </section>
