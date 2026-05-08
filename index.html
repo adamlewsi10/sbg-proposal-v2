@@ -207,9 +207,16 @@ section { padding: 4.5rem 2rem; }
 .route-meta-item .value { font-size: 0.8rem; color: var(--black); font-weight: 500; }
 .route-callout { background: var(--yellow-soft); border: 1px solid #fde68a; border-radius: 6px; padding: 0.85rem 1rem; font-size: 0.8rem; color: var(--gray-800); line-height: 1.5; margin-top: auto; }
 .route-callout strong { color: #92400e; }
-.routes-recommend { margin-top: 2rem; background: var(--white); border-left: 4px solid var(--ws-data); padding: 1.4rem 1.6rem; border-radius: 6px; max-width: 860px; }
-.routes-recommend p { font-family: var(--serif); font-size: 1rem; line-height: 1.7; color: var(--gray-800); }
-.routes-recommend strong { color: var(--black); font-weight: 600; }
+.routes-recommend { margin-top: 2.5rem; background: var(--black); color: var(--white); border-radius: 12px; padding: 2.4rem 2.6rem; max-width: 920px; position: relative; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+.routes-recommend::before { content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 5px; background: var(--accent); }
+.routes-recommend-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem; }
+.routes-recommend-title { font-family: var(--serif); font-size: clamp(1.6rem, 2.6vw, 2rem); font-weight: 300; line-height: 1.2; margin-bottom: 1.2rem; color: var(--white); }
+.routes-recommend-title em { font-style: italic; font-weight: 400; color: var(--accent); }
+.routes-recommend p { font-family: var(--serif); font-size: 1.05rem; line-height: 1.75; color: rgba(255,255,255,0.85); margin-bottom: 0.9rem; font-weight: 300; }
+.routes-recommend p:last-child { margin-bottom: 0; }
+.routes-recommend strong { color: var(--accent); font-weight: 500; }
+.routes-recommend-bottom { padding-top: 1rem; margin-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.15); font-style: italic; }
+@media (max-width: 600px) { .routes-recommend { padding: 1.8rem 1.5rem; } }
 
 /* TWO PATHWAYS NEXT STEPS */
 .pathways-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; margin-top: 1.5rem; }
@@ -538,7 +545,6 @@ footer .we-relate em { font-style: italic; }
     <div class="section-label">Two Routes Forward</div>
     <h2 class="section-title">Since we last met, we&rsquo;ve <em>explored the question of scope</em> more deeply.</h2>
     <p class="section-sub">Here&rsquo;s where we&rsquo;ve landed.</p>
-    <p class="routes-intro">Following our initial conversations and Tommy&rsquo;s deeper review of your Dynamics estate, we&rsquo;ve explored two routes forward. Both are viable. They&rsquo;re not in conflict &mdash; they&rsquo;re sequential. <em>Option A delivers value quickly and would form part of any future Option B anyway. Option B is bigger, longer, and would only ever be approached in stages.</em> Whichever direction you choose long term, starting with Option A makes sense.</p>
 
     <div class="routes-grid">
 
@@ -620,7 +626,12 @@ footer .we-relate em { font-style: italic; }
     </div>
 
     <div class="routes-recommend">
-      <p><strong>Our recommendation:</strong> proceed with Option A now. Address the most acute pain. Build foundations that compound. Use the first phase to validate whether a broader Option B transformation is commercially and technically justified &mdash; with eyes open and real platform experience under your belt.</p>
+      <div class="routes-recommend-label">Our Recommendation</div>
+      <h3 class="routes-recommend-title">Start with <em>Option A</em>.</h3>
+      <p>It addresses the most acute pain right now &mdash; marketing self-service, multi-brand execution, lead handoff into Dynamics &mdash; and gives the team something tangible in weeks, not quarters.</p>
+      <p>It&rsquo;s the lower-risk path. Targeted, well-scoped, integration-led. No CRM disruption, no legacy untangling, no commitment to a wider transformation programme before you&rsquo;ve had real HubSpot experience under your belt.</p>
+      <p>And critically, <strong>none of the work is wasted.</strong> Everything we build in Option A &mdash; the data model, the Business Units, the Dynamics integration, the consent architecture, the campaign engine &mdash; is exactly what Phase 1 of Option B would look like anyway. So if you later decide a broader platform consolidation is the right move, you&rsquo;re already underway.</p>
+      <p class="routes-recommend-bottom">Use Option A as the foundation. Use the experience to validate &mdash; with real evidence, not assumption &mdash; whether the bigger Option B transformation is commercially and technically justified.</p>
     </div>
   </div>
 </section>
