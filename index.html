@@ -207,9 +207,9 @@ section { padding: 4.5rem 2rem; }
 .route-meta-item .value { font-size: 0.8rem; color: var(--black); font-weight: 500; }
 .route-callout { background: var(--yellow-soft); border: 1px solid #fde68a; border-radius: 6px; padding: 0.85rem 1rem; font-size: 0.8rem; color: var(--gray-800); line-height: 1.5; margin-top: auto; }
 .route-callout strong { color: #92400e; }
-.routes-recommend { margin-top: 1.6rem; background: var(--black); color: var(--white); border-radius: 8px; padding: 1rem 1.3rem; max-width: 720px; display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; border-left: 4px solid var(--accent); }
+.routes-recommend { margin-top: 1.4rem; background: var(--black); color: var(--white); border-radius: 8px; padding: 1.1rem 1.6rem; display: flex; align-items: baseline; gap: 1.2rem; flex-wrap: wrap; border-left: 4px solid var(--accent); }
 .routes-recommend-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
-.routes-recommend p { font-size: 0.88rem; line-height: 1.55; color: rgba(255,255,255,0.9); margin: 0; flex: 1; min-width: 240px; }
+.routes-recommend p { font-size: 0.9rem; line-height: 1.55; color: rgba(255,255,255,0.9); margin: 0; flex: 1; min-width: 240px; }
 .routes-recommend strong { color: var(--accent); font-weight: 600; }
 
 /* TWO PATHWAYS NEXT STEPS */
@@ -250,6 +250,21 @@ section { padding: 4.5rem 2rem; }
 
 /* CREDENTIALS */
 .credentials { background: var(--white); border-top: 1px solid var(--gray-200); }
+
+/* OPTION B SPRINT */
+.sprint { background: var(--beige); border-top: 1px solid var(--gray-200); }
+.sprint .section-label { color: var(--brand-bankhall); }
+.sprint-meta { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.8rem; padding: 1rem 1.3rem; background: var(--white); border-radius: 8px; border: 1px solid var(--gray-200); border-left: 4px solid var(--brand-bankhall); }
+.sprint-meta-item .label { font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray-400); margin-bottom: 0.2rem; }
+.sprint-meta-item .value { font-size: 0.88rem; font-weight: 500; color: var(--black); }
+.sprint-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; margin-top: 1.5rem; }
+@media (max-width: 900px) { .sprint-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .sprint-grid { grid-template-columns: 1fr; } }
+.sprint-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px; padding: 1.1rem 1.2rem; transition: transform 0.3s, box-shadow 0.3s; }
+.sprint-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.05); }
+.sprint-card-num { font-family: var(--serif); font-size: 0.8rem; font-weight: 600; color: var(--brand-bankhall); margin-bottom: 0.3rem; letter-spacing: 0.05em; }
+.sprint-card h4 { font-family: var(--serif); font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; line-height: 1.25; color: var(--black); }
+.sprint-card p { font-size: 0.78rem; color: var(--gray-600); line-height: 1.55; }
 
 /* Integration diagrams */
 .diag-toggle { display: flex; gap: 0; margin-bottom: 1.5rem; border: 2px solid var(--black); border-radius: 6px; overflow: hidden; width: fit-content; }
@@ -392,6 +407,7 @@ footer .we-relate em { font-style: italic; }
     <a href="#architecture">Architecture</a>
     <a href="#routes">Two Routes</a>
     <a href="#approach">Option A</a>
+    <a href="#sprint">Option B</a>
     <a href="#why-boom">Why Us</a>
     <a href="#next-steps">Next Steps</a>
   </div>
@@ -661,6 +677,43 @@ footer .we-relate em { font-style: italic; }
       <div class="milestone-item"><div class="milestone-dot p2">3</div><h4>Events Live</h4><p>Event registration, automated comms, and BBD Boom event module deployed</p></div>
       <div class="milestone-item"><div class="milestone-dot p2">4</div><h4>Omnichannel Active</h4><p>Social, WhatsApp, ads, and advanced automation all operational</p></div>
       <div class="milestone-item"><div class="milestone-dot done">5</div><h4>Full Value</h4><p>Attribution reporting, ROI dashboards, and team fully self-sufficient</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sprint reveal" id="sprint">
+  <div class="section-inner">
+    <div class="section-label">Option B in Detail</div>
+    <h2 class="section-title">What does <em>Option B</em> look like?</h2>
+    <p class="section-sub">Before any commitment to a full platform consolidation, Option B starts with a <strong>System Design &amp; Technical Discovery Sprint</strong> &mdash; resolving the architecture questions that determine whether broader Dynamics replacement is the right move.</p>
+
+    <div class="sprint-meta">
+      <div class="sprint-meta-item">
+        <div class="label">Engagement</div>
+        <div class="value">System Design &amp; Technical Discovery Sprint</div>
+      </div>
+      <div class="sprint-meta-item">
+        <div class="label">Typical duration</div>
+        <div class="value">12 weeks</div>
+      </div>
+      <div class="sprint-meta-item">
+        <div class="label">Output</div>
+        <div class="value">Validated architecture, scope, sequencing &amp; cost</div>
+      </div>
+    </div>
+
+    <p class="section-sub" style="margin-bottom:0;">The sprint covers nine workstreams:</p>
+
+    <div class="sprint-grid">
+      <div class="sprint-card"><div class="sprint-card-num">01</div><h4>Marketing Operating Model</h4><p>Confirm HubSpot Marketing Hub scope across email, journeys, forms, lists, reporting, social and events.</p></div>
+      <div class="sprint-card"><div class="sprint-card-num">02</div><h4>Brand &amp; Consent Design</h4><p>Define Business Units, subscription types, preference centres, asset separation, opt-in/out behaviour.</p></div>
+      <div class="sprint-card"><div class="sprint-card-num">03</div><h4>Dynamics Data Model Review</h4><p>Identify objects and fields required for HubSpot phase one.</p></div>
+      <div class="sprint-card"><div class="sprint-card-num">04</div><h4>Contact Identity Design</h4><p>Decide how duplicate individuals, email addresses, brands and firm relationships should be represented.</p></div>
+      <div class="sprint-card"><div class="sprint-card-num">05</div><h4>Integration Design</h4><p>Validate native Dynamics integration vs iPaaS or custom approach.</p></div>
+      <div class="sprint-card"><div class="sprint-card-num">06</div><h4>Lead Lifecycle &amp; Handoff</h4><p>Define lead capture, scoring, qualification and sync to Dynamics.</p></div>
+      <div class="sprint-card"><div class="sprint-card-num">07</div><h4>Event Architecture</h4><p>Determine which events move into HubSpot and whether CVent remains for large conferences.</p></div>
+      <div class="sprint-card"><div class="sprint-card-num">08</div><h4>Reporting &amp; Attribution</h4><p>Define campaign, lead and revenue attribution requirements.</p></div>
+      <div class="sprint-card"><div class="sprint-card-num">09</div><h4>Future CRM Migration Assessment</h4><p>Identify what would be required to migrate sales and service from Dynamics to HubSpot.</p></div>
     </div>
   </div>
 </section>
@@ -944,18 +997,13 @@ footer .we-relate em { font-style: italic; }
         <span class="pathway-tag">If you want to explore Option B</span>
         <h3>System Design &amp; Technical Discovery Sprint</h3>
         <p class="pathway-tagline">12-week discovery sprint. Architectural validation before any commitment.</p>
-        <p class="pathway-intro">A typically 12-week engagement to resolve the architecture questions that determine whether a full platform consolidation should remain on the roadmap. The sprint covers nine workstreams:</p>
-        <ol class="pathway-list">
-          <li><strong>Marketing Operating Model</strong> &mdash; Confirm HubSpot Marketing Hub scope across email, journeys, forms, lists, reporting, social and events.</li>
-          <li><strong>Brand and Consent Design</strong> &mdash; Define Business Units, subscription types, preference centres, asset separation, opt-in/out behaviour.</li>
-          <li><strong>Dynamics Data Model Review</strong> &mdash; Identify objects and fields required for HubSpot phase one.</li>
-          <li><strong>Contact Identity Design</strong> &mdash; Decide how duplicate individuals, email addresses, brands and firm relationships should be represented.</li>
-          <li><strong>Integration Design</strong> &mdash; Validate native Dynamics integration vs iPaaS / custom approach.</li>
-          <li><strong>Lead Lifecycle and Handoff</strong> &mdash; Define lead capture, scoring, qualification and sync to Dynamics.</li>
-          <li><strong>Event Architecture</strong> &mdash; Determine which events move into HubSpot and whether CVent remains for large conferences.</li>
-          <li><strong>Reporting and Attribution</strong> &mdash; Define campaign, lead and revenue attribution requirements.</li>
-          <li><strong>Future CRM Migration Assessment</strong> &mdash; Identify what would be required to migrate sales and service from Dynamics to HubSpot.</li>
-        </ol>
+        <div class="steps-list" style="margin-top:0;">
+          <div class="step-item"><div class="step-num">1</div><div><h4>Sprint Scoping Conversation</h4><p>Confirm objectives, stakeholders and the questions Option B needs to answer.</p></div></div>
+          <div class="step-item"><div class="step-num">2</div><div><h4>Statement of Work</h4><p>Defined sprint plan across the nine workstreams above, with timeline and investment.</p></div></div>
+          <div class="step-item"><div class="step-num">3</div><div><h4>Sprint Delivery</h4><p>12-week engagement covering operating model, data, integration, identity, lifecycle, events, reporting, future CRM migration.</p></div></div>
+          <div class="step-item" style="border-bottom:none;"><div class="step-num">4</div><div><h4>Validated Recommendation</h4><p>Architecture, scope, sequencing and cost &mdash; enough to decide whether the broader transformation is justified.</p></div></div>
+        </div>
+        <p style="font-size:0.74rem;color:var(--gray-400);margin-top:0.8rem;font-style:italic;">See <a href="#sprint" style="color:var(--brand-bankhall);text-decoration:none;font-weight:600;">What does Option B look like?</a> for the nine workstreams in detail.</p>
       </div>
 
     </div>
